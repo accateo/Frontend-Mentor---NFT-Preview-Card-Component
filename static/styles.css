@@ -1,0 +1,73 @@
+@font-face {
+	  font-family: Outfit;
+	  src: url('../font/Outfit-VariableFont_wght.ttf');
+	}
+  
+body{
+
+background-color: hsl(217, 54%, 11%);
+font-family: Outfit;
+color:hsl(0, 0%, 100%);
+font-size:14px;
+}
+
+.card{
+position: absolute;
+top: 50%;
+left: 50%;
+-moz-transform: translateX(-50%) translateY(-50%);
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(178, 100%, 50%); }
+
+h5:hover {
+  color: hsl(178, 100%, 50%);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.img-wrapper {
+  cursor: pointer;
+  position: relative;
+  line-height: 0;
+  overflow: hidden;
+}
+
+ .img-wrapper::before {
+	content: "";
+	background-color: hsl(178, 100%, 50%, .5);
+	border-radius: .5rem;
+	height: 224px; 
+	left: 15px;
+	opacity: 0;
+	padding:15px 15px 15px 15px;
+	position: absolute;
+	top: 15px;
+	transition: all .5s;
+	width: 224px;
+  }
+
+.img-wrapper::after {
+	content: url("../images/icon-view.svg");
+	left: 50%;
+	opacity: 0;
+	position: absolute;
+	top: 60%;
+	transform: translate(-50%, -50%);
+	transition: all .5s;
+  }
+  
+.img-wrapper:hover::before {
+	opacity: 1;
+  }
+
+.img-wrapper:hover::after {
+	opacity: 1;
+	top: 50%;
+  }
