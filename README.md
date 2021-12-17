@@ -16,4 +16,6 @@ HTML, CSS and fantasy.
  
 * **
 
+Live version: https://frontend-mentor-nft-preview-card-component-pi.vercel.app/
+
 Follow me on http://twitch.tv/accacoding
